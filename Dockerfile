@@ -1,4 +1,3 @@
-FROM php:7.4-fpm
-COPY ./src/ /usr/src/myapp
-WORKDIR /usr/src/myapp
+FROM nginx:alpine
 
+COPY ./nginx.conf /etc/nginx/conf.d/default.conf
